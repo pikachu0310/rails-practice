@@ -23,7 +23,7 @@ class UsersController < ApplicationController
       @user.activate
       log_in @user
       flash[:info] = "Account Created!"
-      flash[:success] = "Welcome to the Sample App!" # フラッシュメッセージを適宜調整
+      flash[:success] = "Welcome to the PIKA SNS!"
       redirect_to @user
     else
       render 'new', status: :unprocessable_entity
